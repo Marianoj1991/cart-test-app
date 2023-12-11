@@ -1,0 +1,27 @@
+.products {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 300ms ease-out;
+}
+
+.product img {
+  max-height: 300px;
+  border-radius: 1rem;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
